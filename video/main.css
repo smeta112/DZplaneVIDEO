@@ -1,0 +1,84 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccc;
+}
+
+.firstScreen{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.firstScreen video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 15;
+}
+
+.firstScreenBody{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /*не в 1 строчку*/
+    justify-content: center;
+    align-items: center;
+}
+.firstScreenBody .title{
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.firstScreenBody .subTitle{
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.wrapper{
+    min-width: 990 px;
+    margin: 0 auto;
+    position: relative;
+    z-index: ;
+    background-color: #fff;
+}
+
+
+/* .wrapper.p,
+.wrapperli{
+    line-height: 30px ;
+    margin-bottom: 15px;
+}
+.wrapper ul{
+    list-style-position: inside;
+}
+.wrapper{
+    min-width: 990 px;
+    margin: 0 auto;
+    padding : 10px
+}
+
+fs
+.wrapper img{
+    width: 100%
+    margin-bottom: 25px;
+} 
+lightshot an APP*/
